@@ -1,5 +1,5 @@
 """
-WSGI config for shoppingCart project.
+WSGI config for shopping_cart project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shoppingCart.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shopping_cart.settings')
 
 application = get_wsgi_application()

@@ -1,5 +1,5 @@
 """
-URL configuration for shoppingCart project.
+URL configuration for shopping_cart project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/

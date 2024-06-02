@@ -1,5 +1,5 @@
 """
-ASGI config for shoppingCart project.
+ASGI config for shopping_cart project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shoppingCart.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shopping_cart.settings')
 
 application = get_asgi_application()
