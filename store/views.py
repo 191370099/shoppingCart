@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 
 from store.models import Cart, Product, CartItem
+from store.permissions import IsOwnerOrReadOnly
 from store.serializers import CartSerializer, ProductSerializer, CartItemSerializer, AddCartItemSerializer, \
     UpdateCartItemSerializer
 
@@ -9,6 +10,7 @@ from store.serializers import CartSerializer, ProductSerializer, CartItemSeriali
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    permission_classes = [IsOwnerOrReadOnly]
 
 
 # Create your views here.
