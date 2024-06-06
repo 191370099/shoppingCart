@@ -147,3 +147,6 @@ DJOSER = {
         'current_user': 'accounts.serializers.UserSerializer',
     }
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
