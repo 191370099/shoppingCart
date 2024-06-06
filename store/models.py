@@ -46,6 +46,7 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     price = models.FloatField()
     description = models.TextField()
+    file = models.FileField(upload_to='uploads/', default=None)
 
 
 class Cart(models.Model):
